@@ -1,0 +1,27 @@
+{
+  "object": "ChatList",
+  "items": [
+    {
+      "object": "Chat",
+      "name": null,
+      "type": 0,
+      "folder": [
+        "INBOX",
+        "INBOX_LINKEDIN_CLASSIC"
+      ],
+      "unread": 0,
+      "archived": 0,
+      "read_only": 0,
+      "timestamp": "2025-06-19T20:22:36.000Z",
+      "account_id": "i5IWGAcUQUe_NznFzVIynw",
+      "provider_id": "2-MDNiZmFkZDgtMjA2Yy00NTcyLThmOTktY2U1NGUyMDM1YzcwXzEwMA==",
+      "account_type": "LINKEDIN",
+      "unread_count": 0,
+      "disabledFeatures": [],
+      "attendee_provider_id": "ACoAAA119qIBvOTRhOkXtY4yGtmG_XWf3rjJ48Q",
+      "id": "1o0xC1RWV4q3fcsJlJUmFg",
+      "muted_until": null
+    }
+  ],
+  "cursor": null
+}
