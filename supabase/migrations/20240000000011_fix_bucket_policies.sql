@@ -1,5 +1,5 @@
 -- First ensure buckets table has RLS enabled
-ALTER TABLE storage.buckets ENABLE ROW LEVEL SECURITY;
+-- ALTER TABLE storage.buckets ENABLE ROW LEVEL SECURITY;
 
 -- Drop any existing bucket policies to start fresh
 DO $$

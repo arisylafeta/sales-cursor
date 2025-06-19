@@ -1,5 +1,10 @@
 -- Drop existing tables and objects if they exist
-DROP TRIGGER IF EXISTS tr_file_version ON public.file_uploads;
+DO $$
+BEGIN
+    IF EXISTS (SELECT 1 FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'file_uploads') THEN
+        DROP TRIGGER IF EXISTS tr_file_version ON public.file_uploads;
+    END IF;
+END $$;
 DROP FUNCTION IF EXISTS set_file_version();
 DROP FUNCTION IF EXISTS get_next_file_version();
 DROP TABLE IF EXISTS public.file_uploads;
@@ -88,7 +93,7 @@ CREATE TRIGGER tr_file_version
 DO $$
 BEGIN
     -- Ensure storage schema is properly configured
-    ALTER TABLE storage.objects ENABLE ROW LEVEL SECURITY;
+    -- ALTER TABLE storage.objects ENABLE ROW LEVEL SECURITY;
     
     -- Create or update the chat_attachments bucket
     INSERT INTO storage.buckets (id, name, public, file_size_limit, allowed_mime_types)
