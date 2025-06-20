@@ -5,6 +5,7 @@
  */
 
 import { getBaseUrl, getHeaders, makeRequest, ensureAccountId } from './config';
+import { cleanCompanyProfile, cleanCompanySearchResults } from './cleaners/companies';
 
 // Types
 export interface LinkedInCompanyLocation {
@@ -51,8 +52,9 @@ export interface LinkedInCompany {
  */
 export async function getCompanyProfile(
   identifier: string,
-  accountId?: string
-): Promise<LinkedInCompany> {
+  accountId?: string,
+  raw: boolean = false
+): Promise<any> {
   if (!identifier) {
     throw new Error('Company identifier is required');
   }
@@ -61,10 +63,13 @@ export async function getCompanyProfile(
   const baseUrl = getBaseUrl();
   const url = `${baseUrl}/api/v1/linkedin/company/${identifier}?account_id=${id}`;
   
-  return makeRequest<LinkedInCompany>(url, {
+  const response = await makeRequest<LinkedInCompany>(url, {
     method: 'GET',
     headers: getHeaders()
   });
+  
+  // Return raw response if raw is true, otherwise clean and return
+  return raw ? response : cleanCompanyProfile(response);
 }
 
 /**
@@ -78,7 +83,8 @@ export async function getCompanyProfile(
 export async function searchCompanies(
   keywords: string,
   accountId?: string,
-  limit?: number
+  limit?: number,
+  raw: boolean = false
 ): Promise<any> {
   if (!keywords) {
     throw new Error('Search keywords are required');
@@ -88,7 +94,7 @@ export async function searchCompanies(
   const baseUrl = getBaseUrl();
   const url = `${baseUrl}/api/v1/linkedin/search?account_id=${id}`;
   
-  return makeRequest<any>(url, {
+  const response = await makeRequest<any>(url, {
     method: 'POST',
     headers: getHeaders(),
     body: JSON.stringify({
@@ -99,60 +105,7 @@ export async function searchCompanies(
       limit: limit || 10
     })
   });
-}
-
-/**
- * Follow a LinkedIn company
- * 
- * @param companyId - The LinkedIn company ID
- * @param accountId - Optional account ID (will use env var if not provided)
- * @returns The result of the follow request
- */
-export async function followCompany(
-  companyId: string,
-  accountId?: string
-): Promise<any> {
-  if (!companyId) {
-    throw new Error('Company ID is required');
-  }
   
-  const id = ensureAccountId(accountId);
-  const baseUrl = getBaseUrl();
-  const url = `${baseUrl}/api/v1/linkedin/company/${companyId}/follow`;
-  
-  return makeRequest<any>(url, {
-    method: 'POST',
-    headers: getHeaders(),
-    body: JSON.stringify({
-      account_id: id
-    })
-  });
-}
-
-/**
- * Unfollow a LinkedIn company
- * 
- * @param companyId - The LinkedIn company ID
- * @param accountId - Optional account ID (will use env var if not provided)
- * @returns The result of the unfollow request
- */
-export async function unfollowCompany(
-  companyId: string,
-  accountId?: string
-): Promise<any> {
-  if (!companyId) {
-    throw new Error('Company ID is required');
-  }
-  
-  const id = ensureAccountId(accountId);
-  const baseUrl = getBaseUrl();
-  const url = `${baseUrl}/api/v1/linkedin/company/${companyId}/unfollow`;
-  
-  return makeRequest<any>(url, {
-    method: 'POST',
-    headers: getHeaders(),
-    body: JSON.stringify({
-      account_id: id
-    })
-  });
+  // Return raw response if raw is true, otherwise clean and return
+  return raw ? response : cleanCompanySearchResults(response);
 }

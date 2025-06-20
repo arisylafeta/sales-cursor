@@ -1,0 +1,1 @@
+No job postings found.

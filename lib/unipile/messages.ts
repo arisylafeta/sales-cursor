@@ -5,6 +5,12 @@
  */
 
 import { getBaseUrl, getHeaders, makeRequest, ensureAccountId, PaginatedResponse } from './config';
+import { 
+  cleanChats, 
+  cleanChatMessages, 
+  cleanCreateChatResponse, 
+  cleanSendMessageResponse 
+} from './cleaners/messages';
 
 // Types
 export interface LinkedInChat {
@@ -76,8 +82,9 @@ export interface LinkedInMessageAttachment {
 export async function getChats(
   accountId?: string,
   cursor?: string,
-  limit?: number
-): Promise<PaginatedResponse<LinkedInChat>> {
+  limit?: number,
+  raw: boolean = false
+): Promise<any> {
   const id = ensureAccountId(accountId);
   const baseUrl = getBaseUrl();
   
@@ -85,10 +92,13 @@ export async function getChats(
   if (cursor) url += `&cursor=${cursor}`;
   if (limit) url += `&limit=${limit}`;
   
-  return makeRequest<PaginatedResponse<LinkedInChat>>(url, {
+  const response = await makeRequest<PaginatedResponse<LinkedInChat>>(url, {
     method: 'GET',
     headers: getHeaders()
   });
+  
+  // Return raw response if raw is true, otherwise clean and return
+  return raw ? response : cleanChats(response);
 }
 
 /**
@@ -104,8 +114,9 @@ export async function getChatMessages(
   chatId: string,
   accountId?: string,
   cursor?: string,
-  limit?: number
-): Promise<PaginatedResponse<LinkedInMessage>> {
+  limit?: number,
+  raw: boolean = false
+): Promise<any> {
   if (!chatId) {
     throw new Error('Chat ID is required');
   }
@@ -117,10 +128,13 @@ export async function getChatMessages(
   if (cursor) url += `&cursor=${cursor}`;
   if (limit) url += `&limit=${limit}`;
   
-  return makeRequest<PaginatedResponse<LinkedInMessage>>(url, {
+  const response = await makeRequest<PaginatedResponse<LinkedInMessage>>(url, {
     method: 'GET',
     headers: getHeaders()
   });
+  
+  // Return raw response if raw is true, otherwise clean and return
+  return raw ? response : cleanChatMessages(response);
 }
 
 /**
@@ -139,7 +153,8 @@ export async function sendMessage(
   options?: {
     type?: 'text' | 'html';
     attachments?: LinkedInMessageAttachment[];
-  }
+  },
+  raw: boolean = false
 ): Promise<any> {
   if (!chatId) {
     throw new Error('Chat ID is required');
@@ -163,81 +178,52 @@ export async function sendMessage(
     body.attachments = options.attachments;
   }
   
-  return makeRequest<any>(url, {
+  const response = await makeRequest<any>(url, {
     method: 'POST',
     headers: getHeaders(),
     body: JSON.stringify(body)
   });
+  
+  // Return raw response if raw is true, otherwise clean and return
+  return raw ? response : cleanSendMessageResponse(response);
 }
 
 /**
  * Create a new chat with a LinkedIn user
  * 
  * @param recipientId - The LinkedIn user's provider ID
+ * @param text - The text of the message to be sent in the new chat
  * @param accountId - Optional account ID (will use env var if not provided)
  * @returns The created chat
  */
 export async function createChat(
   recipientId: string,
-  accountId?: string
-): Promise<LinkedInChat> {
-  if (!recipientId) {
-    throw new Error('Recipient ID is required');
-  }
-  
-  const id = ensureAccountId(accountId);
-  const baseUrl = getBaseUrl();
-  const url = `${baseUrl}/api/v1/chats`;
-  
-  return makeRequest<LinkedInChat>(url, {
-    method: 'POST',
-    headers: getHeaders(),
-    body: JSON.stringify({
-      account_id: id,
-      attendee_id: recipientId
-    })
-  });
-}
-
-/**
- * Send an InMail to a LinkedIn user
- * 
- * @param recipientId - The LinkedIn user's provider ID
- * @param subject - The subject of the InMail
- * @param content - The content of the InMail
- * @param accountId - Optional account ID (will use env var if not provided)
- * @returns The sent InMail
- */
-export async function sendInMail(
-  recipientId: string,
-  subject: string,
-  content: string,
-  accountId?: string
+  text: string,
+  accountId?: string,
+  raw: boolean = false
 ): Promise<any> {
   if (!recipientId) {
     throw new Error('Recipient ID is required');
   }
-  
-  if (!subject) {
-    throw new Error('InMail subject is required');
+
+  if (!text) {
+    throw new Error('Message text is required');
   }
-  
-  if (!content) {
-    throw new Error('InMail content is required');
-  }
-  
+
   const id = ensureAccountId(accountId);
   const baseUrl = getBaseUrl();
-  const url = `${baseUrl}/api/v1/linkedin/inmail`;
-  
-  return makeRequest<any>(url, {
+  const url = `${baseUrl}/api/v1/chats`;
+
+  const response = await makeRequest<LinkedInChat>(url, {
     method: 'POST',
     headers: getHeaders(),
     body: JSON.stringify({
       account_id: id,
-      recipient_id: recipientId,
-      subject,
-      content
+      attendees_ids: [recipientId],
+      text
     })
   });
+  
+  // Return raw response if raw is true, otherwise clean and return
+  return raw ? response : cleanCreateChatResponse(response);
 }

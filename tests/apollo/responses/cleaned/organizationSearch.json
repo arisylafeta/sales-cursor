@@ -1,0 +1,47 @@
+{
+  "organizations": [
+    {
+      "name": "Apollo.io: Unlimited Data Export",
+      "website_url": "http://www.leadpursue.com",
+      "linkedin_url": "http://www.linkedin.com/company/apollo-io-unlimited-data-export",
+      "domain": "leadpursue.com"
+    },
+    {
+      "name": "Export Apollo.io",
+      "linkedin_url": "http://www.linkedin.com/company/apollo-export"
+    },
+    {
+      "name": "Apollo.io",
+      "website_url": "http://www.zenleads.io",
+      "linkedin_url": "http://www.linkedin.com/company/apollo.io",
+      "domain": "zenleads.io"
+    },
+    {
+      "name": "ApolloXport - DFY Apollo.io Data",
+      "website_url": "http://www.apolloxport.com",
+      "linkedin_url": "http://www.linkedin.com/company/apolloxport-dfy-apollo-io-data",
+      "domain": "apolloxport.com"
+    },
+    {
+      "name": "ApolloIoT",
+      "website_url": "http://www.apolloiot.com",
+      "linkedin_url": "http://www.linkedin.com/company/apolloiot",
+      "domain": "apolloiot.com",
+      "founded_year": 2015
+    },
+    {
+      "name": "Apollo.io",
+      "website_url": "http://www.apollo.io",
+      "linkedin_url": "http://www.linkedin.com/company/apolloio",
+      "domain": "apollo.io",
+      "founded_year": 2015,
+      "revenue": "100M"
+    },
+    {
+      "name": "Apollo.io",
+      "website_url": "http://www.marlink-agency.com",
+      "linkedin_url": "http://www.linkedin.com/company/apollo-io-marlink",
+      "domain": "marlink-agency.com"
+    }
+  ]
+}

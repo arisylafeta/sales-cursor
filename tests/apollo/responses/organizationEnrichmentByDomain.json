@@ -1,0 +1,266 @@
+{
+  "organization": {
+    "id": "60140f36569f1500a4f838d6",
+    "name": "Unipile",
+    "website_url": "http://www.unipile.com",
+    "blog_url": null,
+    "angellist_url": null,
+    "linkedin_url": "http://www.linkedin.com/company/unipile",
+    "twitter_url": "https://twitter.com/UnipileApp",
+    "facebook_url": null,
+    "primary_phone": {},
+    "languages": [],
+    "alexa_ranking": null,
+    "phone": null,
+    "linkedin_uid": "38111148",
+    "founded_year": 2020,
+    "publicly_traded_symbol": null,
+    "publicly_traded_exchange": null,
+    "logo_url": "https://zenprospect-production.s3.amazonaws.com/uploads/pictures/6852706b69c8920001f74ce4/picture",
+    "crunchbase_url": null,
+    "primary_domain": "unipile.com",
+    "industry": "information technology & services",
+    "estimated_num_employees": 12,
+    "keywords": [
+      "software development",
+      "messaging api",
+      "email api",
+      "whatsapp integration",
+      "linkedin integration",
+      "gmail api",
+      "outlook calendar api",
+      "imap support",
+      "unified inbox",
+      "data extraction",
+      "cloud communication",
+      "api integration",
+      "real-time messaging",
+      "automated workflows",
+      "software publishers",
+      "user engagement tools",
+      "crm integration",
+      "ats software integration",
+      "sales enablement tools",
+      "multi-channel communication",
+      "messaging automation",
+      "email automation",
+      "custom authentication",
+      "webhooks",
+      "personalized messaging",
+      "communication history",
+      "voice messaging api",
+      "integration documentation",
+      "developer support",
+      "live chat integration",
+      "api reference",
+      "social media messaging",
+      "advanced security protocols",
+      "data synchronization",
+      "user management",
+      "customer relationship management",
+      "contact management",
+      "two-way sync",
+      "api maintenance-free",
+      "lower maintenance costs",
+      "effortless integration",
+      "onboarding assistance",
+      "travel scheduling",
+      "event management api",
+      "business communication solutions",
+      "ai agent integration",
+      "recruiting tools integration",
+      "real-time notifications",
+      "cross-platform messaging",
+      "information technology & services",
+      "crm",
+      "sales",
+      "enterprise software",
+      "enterprises",
+      "computer software",
+      "b2b"
+    ],
+    "industries": [
+      "information technology & services"
+    ],
+    "secondary_industries": [],
+    "snippets_loaded": true,
+    "industry_tag_id": "5567cd4773696439b10b0000",
+    "industry_tag_hash": {
+      "information technology & services": "5567cd4773696439b10b0000"
+    },
+    "retail_location_count": 0,
+    "raw_address": "168, Rue de la Rotonde, Riorges, Auvergne-Rhône-Alpes 42153, FR",
+    "street_address": "91 Rue de la Rotonde",
+    "city": "Riorges",
+    "state": "Rhone-Alpes",
+    "postal_code": "42153",
+    "country": "France",
+    "owned_by_organization_id": null,
+    "short_description": "Unipile is a technology company based in Riorges, France, founded in 2020 by Julien Crépieux and Arnaud Hartmann. The company specializes in unified API solutions that facilitate multi-channel messaging within applications. Unipile's offerings include an API that integrates messaging, email, and calendar functionalities across platforms like LinkedIn, WhatsApp, Gmail, and Outlook. This integration allows businesses to enhance communication and synchronize user conversations in real-time.\n\nUnipile primarily serves software publishers in the Application Tracking System (ATS), Customer Relationship Management (CRM), and outreach sectors. The company is dedicated to meeting the unique needs of these industries, helping businesses achieve optimal efficiency and growth. With a focus on customer satisfaction, Unipile aims to provide robust API integration solutions that adapt to the evolving digital landscape.",
+    "suborganizations": [],
+    "num_suborganizations": 0,
+    "annual_revenue_printed": "2M",
+    "annual_revenue": 2000000,
+    "total_funding": 1803855,
+    "total_funding_printed": "1.8M",
+    "latest_funding_round_date": "2023-03-01T00:00:00.000+00:00",
+    "latest_funding_stage": "Other",
+    "funding_events": [
+      {
+        "id": "64582db543e9cf000158501e",
+        "date": "2023-03-01T00:00:00.000+00:00",
+        "news_url": null,
+        "type": "Other",
+        "investors": "",
+        "amount": "1.8M",
+        "currency": "$"
+      }
+    ],
+    "technology_names": [
+      "AI",
+      "Adobe Media Optimizer",
+      "Android",
+      "Apache",
+      "Cedexis Radar",
+      "DoubleClick",
+      "DoubleClick Conversion",
+      "Google AdWords Conversion",
+      "Google Dynamic Remarketing",
+      "Google Font API",
+      "Google Tag Manager",
+      "Mobile Friendly",
+      "React Native",
+      "Stripe",
+      "Ubuntu",
+      "Vimeo",
+      "WordPress.org",
+      "YouTube",
+      "reCAPTCHA"
+    ],
+    "current_technologies": [
+      {
+        "uid": "ai",
+        "name": "AI",
+        "category": "Other"
+      },
+      {
+        "uid": "adobe_media_optimizer",
+        "name": "Adobe Media Optimizer",
+        "category": "Search Marketing"
+      },
+      {
+        "uid": "android",
+        "name": "Android",
+        "category": "Frameworks and Programming Languages"
+      },
+      {
+        "uid": "apache",
+        "name": "Apache",
+        "category": "Load Balancers"
+      },
+      {
+        "uid": "cedexis_radar",
+        "name": "Cedexis Radar",
+        "category": "Web Performance Monitoring"
+      },
+      {
+        "uid": "doubleclick",
+        "name": "DoubleClick",
+        "category": "Ad Servers"
+      },
+      {
+        "uid": "doubleclick_conversion",
+        "name": "DoubleClick Conversion",
+        "category": "Advertising Networks"
+      },
+      {
+        "uid": "google_adwords_conversion",
+        "name": "Google AdWords Conversion",
+        "category": "Advertising Networks"
+      },
+      {
+        "uid": "google_dynamic_remarketing",
+        "name": "Google Dynamic Remarketing",
+        "category": "Retargeting"
+      },
+      {
+        "uid": "google_font_api",
+        "name": "Google Font API",
+        "category": "Fonts"
+      },
+      {
+        "uid": "google_tag_manager",
+        "name": "Google Tag Manager",
+        "category": "Tag Management"
+      },
+      {
+        "uid": "mobile_friendly",
+        "name": "Mobile Friendly",
+        "category": "Other"
+      },
+      {
+        "uid": "react native",
+        "name": "React Native",
+        "category": "Frameworks and Programming Languages"
+      },
+      {
+        "uid": "stripe",
+        "name": "Stripe",
+        "category": "Payments"
+      },
+      {
+        "uid": "ubuntu",
+        "name": "Ubuntu",
+        "category": "Load Balancers"
+      },
+      {
+        "uid": "vimeo",
+        "name": "Vimeo",
+        "category": "Online Video Platforms"
+      },
+      {
+        "uid": "wordpress_org",
+        "name": "WordPress.org",
+        "category": "CMS"
+      },
+      {
+        "uid": "youtube",
+        "name": "YouTube",
+        "category": "Online Video Platforms"
+      },
+      {
+        "uid": "recaptcha",
+        "name": "reCAPTCHA",
+        "category": "Captcha"
+      }
+    ],
+    "org_chart_root_people_ids": [
+      "66fa9c87bd0c94000152cfb9"
+    ],
+    "org_chart_sector": "OrgChart::SectorHierarchy::Rules::IT",
+    "org_chart_removed": true,
+    "org_chart_show_department_filter": true,
+    "departmental_head_count": {
+      "engineering": 8,
+      "sales": 6,
+      "consulting": 5,
+      "marketing": 3,
+      "business_development": 2,
+      "arts_and_design": 6,
+      "entrepreneurship": 2,
+      "support": 4,
+      "administrative": 3,
+      "operations": 2,
+      "education": 1,
+      "information_technology": 4,
+      "finance": 2,
+      "media_and_commmunication": 1,
+      "accounting": 2,
+      "human_resources": 0,
+      "legal": 0,
+      "product_management": 0,
+      "data_science": 0
+    },
+    "generic_org_insights": null
+  }
+}

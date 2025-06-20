@@ -1,0 +1,218 @@
+{
+  "object": "CompanyProfile",
+  "id": "3843",
+  "entity_urn": "urn:li:fsd_company:3843",
+  "name": "Hitachi",
+  "description": "Since its founding in 1910, Hitachi has responded to the expectations of society and its customers through technology and innovation. Our mission is to “Contribute to society through the development of superior, original technology and products.” Over the past 100+ years this commitment has led us to work towards creating a more sustainable society through our “Social Innovation Business”. We work to apply our expertise in information technology (IT), operational technology (OT), and a wide variety of products to advance social infrastructure systems and improve quality of life across the world. \n\nHitachi’s Social Innovation Business is centered around 5 growth sectors: Mobility, Smart Life, Industry, Energy, and IT. Globally, we have nearly 300,000 employees who are working to improve people’s quality of life and our customers’ social, environmental, and economic values to create a sustainable future. The challenges we face as a society are unprecedented, but so are the opportunities. Together, let’s start powering good.",
+  "public_identifier": "hitachi",
+  "profile_url": "https://www.linkedin.com/company/hitachi/",
+  "hashtags": [
+    {
+      "title": "#dx"
+    },
+    {
+      "title": "#gx"
+    },
+    {
+      "title": "#iot"
+    }
+  ],
+  "viewer_permissions": {
+    "canCreateBroadcast": false,
+    "canSeeProducts": false,
+    "canReadContentSuggestions": false,
+    "canUpdateOrganizationProfile": false,
+    "canSponsorShare": false,
+    "canEditPendingDirectSponsoredContentPosters": false,
+    "canReadAdminFeedFollowingPill": false,
+    "canUntagFromMention": false,
+    "canReadOrganizationActivity": false,
+    "canManageCareerPages": false,
+    "canAssociateHashtag": false,
+    "canDeleteShare": false,
+    "canInviteMemberToFollow": false,
+    "canEditPipelineBuilderAdministrators": false,
+    "canReadBroadcastAnalytics": false,
+    "canManageMessagingAccess": false,
+    "canMembersInviteToFollow": false,
+    "canReadPipelineBuilderAdminPage": false,
+    "canDeactivateOrganization": false,
+    "canCreateOrganicShare": false,
+    "canNotifyEmployeesOfShare": false,
+    "canEditDarkShare": false,
+    "canEnableCommentsShare": false,
+    "canReadOrganizationLeadsAnalytics": false,
+    "canDeleteDarkShare": false,
+    "canCreateJobPosting": false,
+    "canEditLeadGenerationFormManagers": false,
+    "canReadMessages": false,
+    "canReadOrganizationTalentBrandAnalytics": false,
+    "canEditDirectSponsoredContentPosters": false,
+    "canReadOrganizationNewsletterAnalytics": false,
+    "canReadAdminDashboard": false,
+    "canPinShare": false,
+    "canReadPipelineBuilderAdministrators": false,
+    "canCreateLinkedInPagesProductFeedBack": false,
+    "canReadEvents": false,
+    "canEditEvents": false,
+    "canManageOrganizationalPageFollow": false,
+    "canReadOrganizationUpdateAnalytics": false,
+    "canCreateComment": false,
+    "canRequestAdminAccess": true,
+    "canEditAdministrators": false,
+    "canCreateDarkShare": false,
+    "canEmployeesInviteToFollow": false,
+    "canSeeEmployeeExperienceAsMember": false,
+    "canReadAdministrators": false,
+    "canExportLeads": false,
+    "canReadDirectSponsoredContentPosters": false,
+    "canManageEmployeeExperienceSettings": false,
+    "canCreateShowcase": false,
+    "canReadOrganizationVisitorAnalytics": false,
+    "canReadLeadGenerationFormManagers": false,
+    "canEditProducts": false,
+    "canReadPendingAdministrators": false,
+    "canManageVerifiedEmailDomains": false,
+    "canEditCurators": false,
+    "canReadPendingDirectSponsoredContentPosters": false,
+    "canManageServicesPage": false,
+    "canReadTermsAndAgreements": false,
+    "canEditPipelineBuilderAdminPage": false,
+    "canReadOrganizationFollowerAnalytics": false,
+    "canManageOrganizationCompetitors": false,
+    "canSendMessages": false,
+    "canDisableCommentsShare": false,
+    "canCreateReaction": false,
+    "canEditPendingAdministrators": false,
+    "canReadOrganizationPipelineBuilderAnalytics": false,
+    "canNotifyEmployees": false,
+    "canSeeOrganizationAdministrativePage": false
+  },
+  "followers_count": 1533971,
+  "is_following": false,
+  "is_employee": false,
+  "organization_type": null,
+  "claimed": true,
+  "locations": [
+    {
+      "is_headquarter": true,
+      "city": "Chiyoda-ku",
+      "country": "JP",
+      "street": [
+        "1-6-6, Marunouchi"
+      ],
+      "postalCode": "100-8280",
+      "description": "Headquarters",
+      "area": "Tokyo"
+    },
+    {
+      "is_headquarter": false,
+      "city": "Dubai",
+      "country": "AE",
+      "street": [
+        "Al Gurg Tower 1 Office No. 301, Baniyas Road, Deira"
+      ],
+      "postalCode": "P.O.Box 5561, "
+    },
+    {
+      "is_headquarter": false,
+      "city": "Datchet, Slough",
+      "country": "GB",
+      "street": [
+        "Ditton Park, Riding Court Road"
+      ],
+      "postalCode": "SL3 9LL"
+    },
+    {
+      "is_headquarter": false,
+      "city": "Seoul",
+      "country": "KR",
+      "street": [
+        "대한민국 서울특별시 종로구 청계천로 41 영풍빌딩 10층"
+      ],
+      "postalCode": "03188"
+    },
+    {
+      "is_headquarter": false,
+      "city": "北京",
+      "country": "CN",
+      "street": [
+        "北京市朝阳区东三环北路5号北京发展大厦18层"
+      ],
+      "postalCode": "100004"
+    },
+    {
+      "is_headquarter": false,
+      "city": "Singapore",
+      "country": "SG",
+      "street": [
+        "7 Tampines Grande, #08-01 Hitachi Square"
+      ],
+      "postalCode": "528736"
+    },
+    {
+      "is_headquarter": false,
+      "city": "Santa Clara",
+      "country": "US",
+      "street": [
+        "2535 Augustine Dr"
+      ],
+      "postalCode": "95054",
+      "area": "CA"
+    },
+    {
+      "is_headquarter": false,
+      "city": "São Paulo",
+      "country": "BR",
+      "street": [
+        "Alameda Santos, 745 – 10º andar - Cj. 101 and 102"
+      ]
+    },
+    {
+      "is_headquarter": false,
+      "city": "New South Wales",
+      "country": "AU",
+      "street": [
+        "Locked Bag 2052, North Ryde"
+      ],
+      "postalCode": "NSW 1670"
+    },
+    {
+      "is_headquarter": false,
+      "city": "New Delhi",
+      "country": "IN",
+      "street": [
+        "Tower B, World Mark 1, Aerocity"
+      ],
+      "postalCode": "110037"
+    }
+  ],
+  "messaging": {
+    "is_enabled": false,
+    "entity_urn": "urn:li:fsd_pageMailbox:503694",
+    "id": "503694"
+  },
+  "activities": [
+    "Information & Telecommunication Systems",
+    "Social Infrastructure & Industrial Systems",
+    "Electronic Systems & Equipment",
+    "Automotives Systems",
+    "Smart Life & Ecofriendly Systems",
+    "Rail",
+    "Energy",
+    "DX",
+    "GX",
+    "Renewable"
+  ],
+  "website": "https://www.hitachi.com",
+  "employee_count": 34967,
+  "employee_count_range": {
+    "from": 10001,
+    "to": null
+  },
+  "industry": [
+    "IT Services and IT Consulting"
+  ],
+  "logo": "https://media.licdn.com/dms/image/v2/D560BAQHYbrUSOssTDA/company-logo_100_100/B56ZXw3lI_HEAQ-/0/1743502858195/hitachi_logo?e=1755734400&v=beta&t=4Al8RDza6OIt3dW6iSrQju7PPiIuIqcEgmX7jzh8OE0",
+  "logo_large": "https://media.licdn.com/dms/image/v2/D560BAQHYbrUSOssTDA/company-logo_200_200/B56ZXw3lI_HEAI-/0/1743502858195/hitachi_logo?e=1755734400&v=beta&t=GEN_72sUVU09TiZrcr6B3IPxQj8qDNUu9mSO4KpoLdE"
+}

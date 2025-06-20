@@ -1,0 +1,30 @@
+{
+  "connections": [
+    {
+      "firstName": "Lobsang",
+      "lastName": "Lama",
+      "fullName": "Lobsang Lama",
+      "headline": "Full Stack Founder | Building startups & helping others do the same",
+      "profilePictureUrl": "https://media.licdn.com/dms/image/v2/D4E03AQGQT6Grag2J8g/profile-displayphoto-shrink_200_200/B4EZT5lSSpHMAY-/0/1739354089691?e=1755734400&v=beta&t=qaG-2rklkKllFixuKafq39cjfDs5x8SW0oG1o0Z7L9c",
+      "publicIdentifier": "lobsang-lama-42a76b63",
+      "publicProfileUrl": "https://www.linkedin.com/in/lobsang-lama-42a76b63/",
+      "memberId": "ACoAAA119qIBvOTRhOkXtY4yGtmG_XWf3rjJ48Q",
+      "memberUrn": "urn:li:fsd_profile:ACoAAA119qIBvOTRhOkXtY4yGtmG_XWf3rjJ48Q",
+      "connectionUrn": "urn:li:fsd_connection:ACoAAA119qIBvOTRhOkXtY4yGtmG_XWf3rjJ48Q",
+      "createdAt": 1750361032000
+    },
+    {
+      "firstName": "Rafaela",
+      "lastName": "Marku",
+      "fullName": "Rafaela Marku",
+      "headline": "SFMC Developer at Deloitte",
+      "profilePictureUrl": "https://media.licdn.com/dms/image/v2/D4D03AQEcM2y_eWsDBQ/profile-displayphoto-shrink_200_200/B4DZaluKNUHwAo-/0/1746537065112?e=1755734400&v=beta&t=cXLOd8RyHnB-sVCiN1adYMDXPnlbWcF2rgBirY7WOTs",
+      "publicIdentifier": "rafaelamarku",
+      "publicProfileUrl": "https://www.linkedin.com/in/rafaelamarku/",
+      "memberId": "ACoAADhugsoB4LOrti8YQn_R84K2w1QS0kyLDmg",
+      "memberUrn": "urn:li:fsd_profile:ACoAADhugsoB4LOrti8YQn_R84K2w1QS0kyLDmg",
+      "connectionUrn": "urn:li:fsd_connection:ACoAADhugsoB4LOrti8YQn_R84K2w1QS0kyLDmg",
+      "createdAt": 1741636098000
+    }
+  ]
+}

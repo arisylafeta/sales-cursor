@@ -1,0 +1,131 @@
+{
+  "object": "LinkedinSearch",
+  "items": [
+    {
+      "type": "COMPANY",
+      "id": "3575102",
+      "name": "Technology & Strategy",
+      "profile_url": "https://www.linkedin.com/company/technology-&-strategy-t&s-/",
+      "summary": "Founded in 2008, Technology and Strategy (T&S) is a global consulting firm specializing in engineering, IT, digital, and project management. We are a trusted partner to our clients on innovative projects, and we have an integrated design office to meet the market's requirements.  T&S is a people-oriented company...",
+      "industry": "IT Services and IT Consulting",
+      "location": "Schiltigheim, Alsace",
+      "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQGXOhYuAfLr7g/company-logo_100_100/company-logo_100_100/0/1730985467126/technology__strategy_ts__logo?e=1755734400&v=beta&t=hUbHUiGx3UPqOjZsX6lTtqdUicU463TQMwuyHymBv8o",
+      "followers_count": 115000,
+      "job_offers_count": 140
+    },
+    {
+      "type": "COMPANY",
+      "id": "28729816",
+      "name": "Technology Innovation Institute",
+      "profile_url": "https://www.linkedin.com/company/tiiuae/",
+      "summary": "The future doesn’t happen by chance, it’s something we work hard to build.  The Technology Innovation Institute (TII) is a pioneering global research institute that focuses on applied research and new-age technology. TII is the applied research pillar of the Advanced Technology Research Council (ATRC...",
+      "industry": "Research Services",
+      "location": "Abu Dhabi",
+      "logo": "https://media.licdn.com/dms/image/v2/C4D0BAQFMXwk2CORyyg/company-logo_100_100/company-logo_100_100/0/1660722787983/tiiuae_logo?e=1755734400&v=beta&t=NyR2nEuw6h3k-0bvEj9fXeCHDoFGyLh6kxvVww29oPk",
+      "followers_count": 184000,
+      "job_offers_count": 13
+    },
+    {
+      "type": "COMPANY",
+      "id": "1145902",
+      "name": "MIT Technology Review",
+      "profile_url": "https://www.linkedin.com/company/mit-technology-review/",
+      "summary": "Founded at the Massachusetts Institute of Technology in 1899, MIT Technology Review is a digitally oriented independent media company whose analysis, features, reviews, interviews, and live events explain the commercial, social, and political impact of new technologies.   MIT Technology Review readers are curious...",
+      "industry": "Book and Periodical Publishing",
+      "location": "Cambridge, Massachusetts",
+      "logo": "https://media.licdn.com/dms/image/v2/C4D0BAQGsqzZIxHvMHg/company-logo_100_100/company-logo_100_100/0/1631374665690/mit_technology_review_logo?e=1755734400&v=beta&t=mKW9xwfFJ6bucRS9fW2EH0hBR_OZ8Lq4__WmCdE0B7s",
+      "followers_count": 1000000
+    },
+    {
+      "type": "COMPANY",
+      "id": "3690",
+      "name": "Micron Technology",
+      "profile_url": "https://www.linkedin.com/company/micron-technology/",
+      "summary": "...the client and mobile user experience. To learn more about Micron Technology, Inc. (Nasdaq: MU), visit micron.com.",
+      "industry": "Semiconductor Manufacturing",
+      "location": "Boise, Idaho",
+      "logo": "https://media.licdn.com/dms/image/v2/D560BAQGfQ4M3evQz-g/company-logo_100_100/company-logo_100_100/0/1728389136980?e=1755734400&v=beta&t=eJb3KGi5w3TJTnAtTgaD1X__Z0Lt3pnG-V6tjEdE69A",
+      "followers_count": 753000,
+      "job_offers_count": 2
+    },
+    {
+      "type": "COMPANY",
+      "id": "673280",
+      "name": "University of Management and Technology - UMT",
+      "profile_url": "https://www.linkedin.com/company/umt-official/",
+      "summary": "Ranked 1st in Pakistan 🏆 by Times Higher Education UK (Private Sector Universities) • Specialties: Systems and Technology",
+      "industry": "Lahore, Punjab, Pakistan",
+      "location": null,
+      "logo": "https://media.licdn.com/dms/image/v2/D4D0BAQFtkLnQJV1yAQ/company-logo_100_100/B4DZdpax26GsAU-/0/1749820318002/umt_official_logo?e=1755734400&v=beta&t=c-faKjkk3QF_6J-R3882KY6teFnauxOudZ1fu-4vgIQ"
+    },
+    {
+      "type": "COMPANY",
+      "id": "9270",
+      "name": "Institution of Engineering and Technology (IET)",
+      "profile_url": "https://www.linkedin.com/company/iet/",
+      "summary": "The IET is a diverse home for engineering and technology across the world.",
+      "industry": "Stevenage",
+      "location": null,
+      "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQHkz_1oo0fN3Q/company-logo_100_100/B4EZdkSuq5GwAU-/0/1749734321227/iet_logo?e=1755734400&v=beta&t=yWMG5ci4xod1_2ZUkHVNxBUlkzl9_CeKZ2K1fDmFGRk"
+    },
+    {
+      "type": "COMPANY",
+      "id": "3558",
+      "name": "Georgia Institute of Technology",
+      "profile_url": "https://www.linkedin.com/company/georgia-institute-of-technology/",
+      "summary": "The Georgia Institute of Technology is one of the nation's premier research universities providing a focused, technologically based education to more than 25,000 undergraduate and graduate students . Ranked seventh among U.S. News & World Report's top public universities, Georgia Tech offers degrees...",
+      "industry": "Atlanta, Georgia ",
+      "location": null,
+      "logo": "https://media.licdn.com/dms/image/v2/C4E0BAQFuhLQoh5_7yA/company-logo_100_100/company-logo_100_100/0/1640110532212/georgia_institute_of_technology_logo?e=1755734400&v=beta&t=zwFzUMlHmG2Bm-_R0j6bW7Q8GuQ4GfPJqyTpwxNkTRA"
+    },
+    {
+      "type": "COMPANY",
+      "id": "5234",
+      "name": "Rackspace Technology",
+      "profile_url": "https://www.linkedin.com/company/rackspace-technology/",
+      "summary": "Rackspace Technology is a leading end-to-end hybrid cloud and AI solutions company. We can design, build, and operate our customers’ cloud environments across all major technology platforms, irrespective of technology stack or deployment model. We partner with our customers at every stage of their cloud journey...",
+      "industry": "IT Services and IT Consulting",
+      "location": "San Antonio, Texas",
+      "logo": "https://media.licdn.com/dms/image/v2/D560BAQETuNdGCduIKA/company-logo_100_100/company-logo_100_100/0/1689621404159/rackspace_technology_logo?e=1755734400&v=beta&t=mWC3rDt7KA0sFxgKcPfTsAAu08hJJZL8_1I52bdEq-Y",
+      "followers_count": 474000,
+      "job_offers_count": 106
+    },
+    {
+      "type": "COMPANY",
+      "id": "165762",
+      "name": "Rochester Institute of Technology",
+      "profile_url": "https://www.linkedin.com/company/rochester-institute-of-technology/",
+      "summary": "At Rochester Institute of Technology, we shape the future and improve the world through creativity and innovation. As an engaged, intellectually curious, and socially conscious community, we leverage the power of technology, the arts, and design for the greater good.  Founded in 1829, Rochester Institute of Technology...",
+      "industry": "Rochester, NY",
+      "location": null,
+      "logo": "https://media.licdn.com/dms/image/v2/C4E0BAQGnICZxLlhERw/company-logo_100_100/company-logo_100_100/0/1630565170020/rochester_institute_of_technology_logo?e=1755734400&v=beta&t=OOUhThVbaaVfQeuyK2QiHRNH9h1hbEwX4N89yDTDNh8"
+    },
+    {
+      "type": "COMPANY",
+      "id": "2868",
+      "name": "Seagate Technology",
+      "profile_url": "https://www.linkedin.com/company/seagate-technology/",
+      "summary": "A global leader for over 45 years, Seagate Technology crafts precision-engineered data storage and management solutions.",
+      "industry": "Computer Hardware Manufacturing",
+      "location": "Fremont, CA",
+      "logo": "https://media.licdn.com/dms/image/v2/D560BAQE__Ircfe1wCw/company-logo_100_100/company-logo_100_100/0/1719861554226/seagate_technology_logo?e=1755734400&v=beta&t=OhZMRJTlkn9mjGBXADy6tg1DXvSeiqiFTv8cLdA8NII",
+      "followers_count": 278000,
+      "job_offers_count": 133
+    }
+  ],
+  "config": {
+    "params": {
+      "api": "classic",
+      "category": "companies",
+      "keywords": "Technology",
+      "account_id": "i5IWGAcUQUe_NznFzVIynw",
+      "limit": 10
+    }
+  },
+  "paging": {
+    "start": 0,
+    "page_count": 10,
+    "total_count": 1000
+  },
+  "cursor": "eyJhY2NvdW50X2lkIjoiaTVJV0dBY1VRVWVfTnpuRnpWSXludyIsImxpbWl0IjoxMCwic3RhcnQiOjEwLCJwYXJhbXMiOnsiYXBpIjoiY2xhc3NpYyIsImNhdGVnb3J5IjoiY29tcGFuaWVzIiwia2V5d29yZHMiOiJUZWNobm9sb2d5IiwiYWNjb3VudF9pZCI6Imk1SVdHQWNVUVVlX056bkZ6Vkl5bnciLCJsaW1pdCI6MTB9fQ=="
+}

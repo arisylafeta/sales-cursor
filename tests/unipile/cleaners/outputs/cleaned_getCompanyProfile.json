@@ -1,0 +1,86 @@
+{
+  "id": "3843",
+  "entityUrn": "urn:li:fsd_company:3843",
+  "name": "Hitachi",
+  "description": "Since its founding in 1910, Hitachi has responded to the expectations of society and its customers through technology and innovation. Our mission is to “Contribute to society through the development of superior, original technology and products.” Over the past 100+ years this commitment has led us to work towards creating a more sustainable society through our “Social Innovation Business”. We work to apply our expertise in information technology (IT), operational technology (OT), and a wide variety of products to advance social infrastructure systems and improve quality of life across the world. \n\nHitachi’s Social Innovation Business is centered around 5 growth sectors: Mobility, Smart Life, Industry, Energy, and IT. Globally, we have nearly 300,000 employees who are working to improve people’s quality of life and our customers’ social, environmental, and economic values to create a sustainable future. The challenges we face as a society are unprecedented, but so are the opportunities. Together, let’s start powering good.",
+  "publicIdentifier": "hitachi",
+  "industry": [
+    "IT Services and IT Consulting"
+  ],
+  "website": "https://www.hitachi.com",
+  "employeeCount": 34967,
+  "employeeCountRange": {
+    "from": 10001,
+    "to": null
+  },
+  "headquarters": {
+    "is_headquarter": true,
+    "city": "Chiyoda-ku",
+    "country": "JP",
+    "street": [
+      "1-6-6, Marunouchi"
+    ],
+    "postalCode": "100-8280",
+    "description": "Headquarters",
+    "area": "Tokyo"
+  },
+  "locations": [
+    {
+      "city": "Chiyoda-ku",
+      "country": "JP",
+      "isHeadquarter": true
+    },
+    {
+      "city": "Dubai",
+      "country": "AE",
+      "isHeadquarter": false
+    },
+    {
+      "city": "Datchet, Slough",
+      "country": "GB",
+      "isHeadquarter": false
+    },
+    {
+      "city": "Seoul",
+      "country": "KR",
+      "isHeadquarter": false
+    },
+    {
+      "city": "北京",
+      "country": "CN",
+      "isHeadquarter": false
+    },
+    {
+      "city": "Singapore",
+      "country": "SG",
+      "isHeadquarter": false
+    },
+    {
+      "city": "Santa Clara",
+      "country": "US",
+      "isHeadquarter": false
+    },
+    {
+      "city": "São Paulo",
+      "country": "BR",
+      "isHeadquarter": false
+    },
+    {
+      "city": "New South Wales",
+      "country": "AU",
+      "isHeadquarter": false
+    },
+    {
+      "city": "New Delhi",
+      "country": "IN",
+      "isHeadquarter": false
+    }
+  ],
+  "hashtags": [
+    "#dx",
+    "#gx",
+    "#iot"
+  ],
+  "logoUrl": "https://media.licdn.com/dms/image/v2/D560BAQHYbrUSOssTDA/company-logo_200_200/B56ZXw3lI_HEAI-/0/1743502858195/hitachi_logo?e=1755734400&v=beta&t=GEN_72sUVU09TiZrcr6B3IPxQj8qDNUu9mSO4KpoLdE",
+  "profileUrl": "https://www.linkedin.com/company/hitachi/"
+}

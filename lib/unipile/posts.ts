@@ -5,6 +5,12 @@
  */
 
 import { getBaseUrl, getHeaders, makeRequest, ensureAccountId, PaginatedResponse } from './config';
+import { 
+  cleanUserPosts, 
+  cleanPostComments, 
+  cleanCreatePostResponse, 
+  cleanCommentOnPostResponse 
+} from './cleaners/posts';
 
 // Types
 export interface LinkedInPostAuthor {
@@ -88,8 +94,9 @@ export async function getUserPosts(
   userId: string,
   accountId?: string,
   cursor?: string,
-  limit?: number
-): Promise<PaginatedResponse<LinkedInPost>> {
+  limit?: number,
+  raw: boolean = false
+): Promise<any> {
   if (!userId) {
     throw new Error('User ID is required');
   }
@@ -101,10 +108,13 @@ export async function getUserPosts(
   if (cursor) url += `&cursor=${cursor}`;
   if (limit) url += `&limit=${limit}`;
   
-  return makeRequest<PaginatedResponse<LinkedInPost>>(url, {
+  const response = await makeRequest<PaginatedResponse<LinkedInPost>>(url, {
     method: 'GET',
     headers: getHeaders()
   });
+  
+  // Return raw response if raw is true, otherwise clean and return
+  return raw ? response : cleanUserPosts(response);
 }
 
 /**
@@ -120,8 +130,9 @@ export async function getUserComments(
   userId: string,
   accountId?: string,
   cursor?: string,
-  limit?: number
-): Promise<PaginatedResponse<LinkedInComment>> {
+  limit?: number,
+  raw: boolean = false
+): Promise<any> {
   if (!userId) {
     throw new Error('User ID is required');
   }
@@ -133,42 +144,49 @@ export async function getUserComments(
   if (cursor) url += `&cursor=${cursor}`;
   if (limit) url += `&limit=${limit}`;
   
-  return makeRequest<PaginatedResponse<LinkedInComment>>(url, {
+  const response = await makeRequest<PaginatedResponse<LinkedInComment>>(url, {
     method: 'GET',
     headers: getHeaders()
   });
+  
+  // Return raw response if raw is true, otherwise clean and return
+  return raw ? response : cleanPostComments(response);
 }
 
 /**
  * Create a new LinkedIn post
  * 
- * @param content - The content of the post
+ * @param text - The text of the post
  * @param visibility - The visibility of the post (connections or public)
  * @param accountId - Optional account ID (will use env var if not provided)
  * @returns The created post
  */
 export async function createPost(
-  content: string,
+  text: string,
   visibility: 'connections' | 'public' = 'connections',
-  accountId?: string
+  accountId?: string,
+  raw: boolean = false
 ): Promise<any> {
-  if (!content) {
-    throw new Error('Post content is required');
+  if (!text) {
+    throw new Error('Post text is required');
   }
   
   const id = ensureAccountId(accountId);
   const baseUrl = getBaseUrl();
   const url = `${baseUrl}/api/v1/posts`;
   
-  return makeRequest<any>(url, {
+  const response = await makeRequest<any>(url, {
     method: 'POST',
     headers: getHeaders(),
     body: JSON.stringify({
       account_id: id,
-      content,
+      text,
       visibility
     })
   });
+  
+  // Return raw response if raw is true, otherwise clean and return
+  return raw ? response : cleanCreatePostResponse(response);
 }
 
 /**
@@ -180,8 +198,9 @@ export async function createPost(
  */
 export async function getPost(
   postId: string,
-  accountId?: string
-): Promise<LinkedInPost> {
+  accountId?: string,
+  raw: boolean = false
+): Promise<any> {
   if (!postId) {
     throw new Error('Post ID is required');
   }
@@ -190,10 +209,38 @@ export async function getPost(
   const baseUrl = getBaseUrl();
   const url = `${baseUrl}/api/v1/posts/${postId}?account_id=${id}`;
   
-  return makeRequest<LinkedInPost>(url, {
+  const response = await makeRequest<LinkedInPost>(url, {
     method: 'GET',
     headers: getHeaders()
   });
+  
+  // Return raw response if raw is true
+  if (raw) {
+    return response;
+  }
+  
+  // Otherwise clean and return
+  // Using cleanPost function which is internal to posts.ts cleaner
+  // We'll use a simplified version here
+  return {
+    id: response.id,
+    text: response.text,
+    date: response.date,
+    parsedDateTime: response.parsed_datetime,
+    shareUrl: response.share_url,
+    stats: {
+      comments: response.comment_counter,
+      reactions: response.reaction_counter,
+      reposts: response.repost_counter,
+      impressions: response.impressions_counter
+    },
+    author: response.author ? {
+      name: response.author.name,
+      headline: response.author.headline,
+      publicIdentifier: response.author.public_identifier,
+      isCompany: response.author.is_company
+    } : null
+  };
 }
 
 /**
@@ -209,8 +256,9 @@ export async function getPostComments(
   postId: string,
   accountId?: string,
   cursor?: string,
-  limit?: number
-): Promise<PaginatedResponse<LinkedInComment>> {
+  limit?: number,
+  raw: boolean = false
+): Promise<any> {
   if (!postId) {
     throw new Error('Post ID is required');
   }
@@ -222,43 +270,50 @@ export async function getPostComments(
   if (cursor) url += `&cursor=${cursor}`;
   if (limit) url += `&limit=${limit}`;
   
-  return makeRequest<PaginatedResponse<LinkedInComment>>(url, {
+  const response = await makeRequest<PaginatedResponse<LinkedInComment>>(url, {
     method: 'GET',
     headers: getHeaders()
   });
+  
+  // Return raw response if raw is true, otherwise clean and return
+  return raw ? response : cleanPostComments(response);
 }
 
 /**
  * Comment on a LinkedIn post
  * 
  * @param postId - The LinkedIn post ID
- * @param content - The content of the comment
+ * @param text - The content of the comment
  * @param accountId - Optional account ID (will use env var if not provided)
  * @returns The created comment
  */
 export async function commentOnPost(
   postId: string,
-  content: string,
-  accountId?: string
+  text: string,
+  accountId?: string,
+  raw: boolean = false
 ): Promise<any> {
   if (!postId) {
     throw new Error('Post ID is required');
   }
   
-  if (!content) {
-    throw new Error('Comment content is required');
+  if (!text) {
+    throw new Error('Comment text is required');
   }
   
   const id = ensureAccountId(accountId);
   const baseUrl = getBaseUrl();
   const url = `${baseUrl}/api/v1/posts/${postId}/comments`;
   
-  return makeRequest<any>(url, {
+  const response = await makeRequest<any>(url, {
     method: 'POST',
     headers: getHeaders(),
     body: JSON.stringify({
       account_id: id,
-      content
+      text
     })
   });
+  
+  // Return raw response if raw is true, otherwise clean and return
+  return raw ? response : cleanCommentOnPostResponse(response);
 }

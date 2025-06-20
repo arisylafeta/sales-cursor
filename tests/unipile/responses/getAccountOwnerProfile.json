@@ -1,0 +1,19 @@
+{
+  "object": "AccountOwnerProfile",
+  "provider": "LINKEDIN",
+  "provider_id": "ACoAADk1jFcBtG9JrnwTLoECcS3qUJo4Yj6sHAI",
+  "entity_urn": "urn:li:fsd_profile:ACoAADk1jFcBtG9JrnwTLoECcS3qUJo4Yj6sHAI",
+  "object_urn": "urn:li:member:959810647",
+  "first_name": "EcoTek",
+  "last_name": "Termika",
+  "profile_picture_url": "https://media.licdn.com/dms/image/v2/D4E03AQEUAPWisGnFIg/profile-displayphoto-shrink_100_100/B4EZWBMg2aGgAU-/0/1741629296679?e=1755734400&v=beta&t=0RnUjHHG2xigdIjsY8vmmJkAwJxXZbHtRJlpLHGrjhY",
+  "public_identifier": "ecotek-termika-b87531229",
+  "occupation": "--",
+  "premium": false,
+  "open_profile": false,
+  "location": "Tirana, Albania",
+  "email": "ecotek.termika@gmail.com",
+  "organizations": [],
+  "recruiter": null,
+  "sales_navigator": null
+}

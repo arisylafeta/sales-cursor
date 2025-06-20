@@ -5,6 +5,14 @@
  */
 
 import { getBaseUrl, getHeaders, makeRequest, ensureAccountId, PaginatedResponse } from './config';
+import { 
+  cleanUserProfile, 
+  cleanAccountOwnerProfile, 
+  cleanUserRelations, 
+  cleanInvitationsReceived, 
+  cleanInvitationsSent,
+  cleanSendInvitationResponse
+} from './cleaners/users';
 
 // Types
 export interface LinkedInUserProfile {
@@ -141,16 +149,20 @@ export interface LinkedInSearchResponse {
  * @returns The LinkedIn account owner profile
  */
 export async function getAccountOwnerProfile(
-  accountId?: string
-): Promise<LinkedInAccountOwnerProfile> {
+  accountId?: string,
+  raw: boolean = false
+): Promise<any> {
   const id = ensureAccountId(accountId);
   const baseUrl = getBaseUrl();
   const url = `${baseUrl}/api/v1/users/me?account_id=${id}`;
   
-  return makeRequest<LinkedInAccountOwnerProfile>(url, {
+  const response = await makeRequest<LinkedInAccountOwnerProfile>(url, {
     method: 'GET',
     headers: getHeaders()
   });
+  
+  // Return raw response if raw is true, otherwise clean and return
+  return raw ? response : cleanAccountOwnerProfile(response);
 }
 
 /**
@@ -162,8 +174,9 @@ export async function getAccountOwnerProfile(
  */
 export async function getUserProfileByIdentifier(
   identifier: string,
-  accountId?: string
-): Promise<LinkedInUserProfile> {
+  accountId?: string,
+  raw: boolean = false
+): Promise<any> {
   if (!identifier) {
     throw new Error('User identifier is required');
   }
@@ -172,10 +185,13 @@ export async function getUserProfileByIdentifier(
   const baseUrl = getBaseUrl();
   const url = `${baseUrl}/api/v1/users/${identifier}?account_id=${id}`;
   
-  return makeRequest<LinkedInUserProfile>(url, {
+  const response = await makeRequest<LinkedInUserProfile>(url, {
     method: 'GET',
     headers: getHeaders()
   });
+  
+  // Return raw response if raw is true, otherwise clean and return
+  return raw ? response : cleanUserProfile(response);
 }
 
 /**
@@ -227,8 +243,9 @@ export async function searchLinkedIn(
 export async function getRelations(
   accountId?: string,
   cursor?: string,
-  limit?: number
-): Promise<PaginatedResponse<LinkedInUserRelation>> {
+  limit?: number,
+  raw: boolean = false
+): Promise<any> {
   const id = ensureAccountId(accountId);
   const baseUrl = getBaseUrl();
   
@@ -236,10 +253,13 @@ export async function getRelations(
   if (cursor) url += `&cursor=${cursor}`;
   if (limit) url += `&limit=${limit}`;
   
-  return makeRequest<PaginatedResponse<LinkedInUserRelation>>(url, {
+  const response = await makeRequest<PaginatedResponse<LinkedInUserRelation>>(url, {
     method: 'GET',
     headers: getHeaders()
   });
+  
+  // Return raw response if raw is true, otherwise clean and return
+  return raw ? response : cleanUserRelations(response);
 }
 
 /**
@@ -253,8 +273,9 @@ export async function getRelations(
 export async function getInvitationsSent(
   accountId?: string,
   cursor?: string,
-  limit?: number
-): Promise<PaginatedResponse<LinkedInInvitation>> {
+  limit?: number,
+  raw: boolean = false
+): Promise<any> {
   const id = ensureAccountId(accountId);
   const baseUrl = getBaseUrl();
   
@@ -262,10 +283,13 @@ export async function getInvitationsSent(
   if (cursor) url += `&cursor=${cursor}`;
   if (limit) url += `&limit=${limit}`;
   
-  return makeRequest<PaginatedResponse<LinkedInInvitation>>(url, {
+  const response = await makeRequest<PaginatedResponse<LinkedInInvitation>>(url, {
     method: 'GET',
     headers: getHeaders()
   });
+  
+  // Return raw response if raw is true, otherwise clean and return
+  return raw ? response : cleanInvitationsSent(response);
 }
 
 /**
@@ -279,8 +303,9 @@ export async function getInvitationsSent(
 export async function getInvitationsReceived(
   accountId?: string,
   cursor?: string,
-  limit?: number
-): Promise<PaginatedResponse<LinkedInInvitation>> {
+  limit?: number,
+  raw: boolean = false
+): Promise<any> {
   const id = ensureAccountId(accountId);
   const baseUrl = getBaseUrl();
   
@@ -288,27 +313,31 @@ export async function getInvitationsReceived(
   if (cursor) url += `&cursor=${cursor}`;
   if (limit) url += `&limit=${limit}`;
   
-  return makeRequest<PaginatedResponse<LinkedInInvitation>>(url, {
+  const response = await makeRequest<PaginatedResponse<LinkedInInvitation>>(url, {
     method: 'GET',
     headers: getHeaders()
   });
+  
+  // Return raw response if raw is true, otherwise clean and return
+  return raw ? response : cleanInvitationsReceived(response);
 }
 
 /**
  * Send a LinkedIn connection request
  * 
- * @param recipient - The LinkedIn identifier of the person to invite
+ * @param recipientProviderId - The LinkedIn provider ID of the person to invite
  * @param message - Optional message to include with the invitation
  * @param accountId - Optional account ID (will use env var if not provided)
  * @returns The result of the invitation request
  */
 export async function sendInvitation(
-  recipient: string,
+  recipientProviderId: string,
   message?: string,
-  accountId?: string
+  accountId?: string,
+  raw: boolean = false
 ): Promise<any> {
-  if (!recipient) {
-    throw new Error('Recipient is required');
+  if (!recipientProviderId) {
+    throw new Error('Recipient Provider ID is required');
   }
   
   const id = ensureAccountId(accountId);
@@ -317,16 +346,19 @@ export async function sendInvitation(
   
   const body: any = {
     account_id: id,
-    recipient
+    provider_id: recipientProviderId
   };
   
   if (message) {
     body.message = message;
   }
   
-  return makeRequest<any>(url, {
+  const response = await makeRequest<any>(url, {
     method: 'POST',
     headers: getHeaders(),
     body: JSON.stringify(body)
   });
+  
+  // Return raw response if raw is true, otherwise clean and return
+  return raw ? response : cleanSendInvitationResponse(response);
 }

@@ -1,0 +1,383 @@
+{
+  "organization": {
+    "id": "5e66b6381e05b4008c8331b8",
+    "name": "Apollo.io",
+    "website_url": "http://www.apollo.io",
+    "blog_url": null,
+    "angellist_url": null,
+    "linkedin_url": "http://www.linkedin.com/company/apolloio",
+    "twitter_url": "https://twitter.com/MeetApollo/",
+    "facebook_url": "https://facebook.com/MeetApollo/",
+    "primary_phone": {},
+    "languages": [],
+    "alexa_ranking": 3514,
+    "phone": null,
+    "linkedin_uid": "18511550",
+    "founded_year": 2015,
+    "publicly_traded_symbol": null,
+    "publicly_traded_exchange": null,
+    "logo_url": "https://zenprospect-production.s3.amazonaws.com/uploads/pictures/67ced4f5414db000016da285/picture",
+    "crunchbase_url": null,
+    "primary_domain": "apollo.io",
+    "industry": "information technology & services",
+    "estimated_num_employees": 910,
+    "keywords": [
+      "sales engagement",
+      "lead generation",
+      "predictive analytics",
+      "lead scoring",
+      "sales strategy",
+      "conversation intelligence",
+      "sales enablement",
+      "lead routing",
+      "sales development",
+      "email engagement",
+      "revenue intelligence",
+      "sales operations",
+      "sales intelligence",
+      "lead intelligence",
+      "prospecting",
+      "b2b data",
+      "software development",
+      "crm integration",
+      "data enrichment",
+      "deal management",
+      "pipeline management",
+      "automated workflows",
+      "analytics & reporting",
+      "coaching & feedback",
+      "signal-based prospecting",
+      "inbound optimization",
+      "contact & account search",
+      "email outreach automation",
+      "meeting scheduling",
+      "ai sales assistant",
+      "multi-channel outreach",
+      "lead qualification",
+      "form optimization",
+      "sales performance improvement",
+      "live data network",
+      "ai sales automation",
+      "revops tools",
+      "account-based prospecting",
+      "sales pipeline",
+      "meeting preparedness",
+      "ai recommendations",
+      "webinar integration",
+      "sales coaching",
+      "team collaboration",
+      "sales insights",
+      "buyer's journey tracking",
+      "market intelligence",
+      "lead prioritization",
+      "customer journey mapping",
+      "sales funnel tracking",
+      "data-driven sales",
+      "email deliverability management",
+      "automated lead follow-up",
+      "predictive analytics for sales",
+      "sales campaign management",
+      "sales productivity tools",
+      "sales performance management",
+      "b2b sales intelligence",
+      "ai-driven automation",
+      "prospecting tools",
+      "contact database",
+      "sales automation",
+      "email tracking",
+      "intent data",
+      "sales workflow management",
+      "advanced search filters",
+      "customer success",
+      "scalable solutions",
+      "sales analytics",
+      "outreach optimization",
+      "data-driven strategies",
+      "customer acquisition",
+      "sales productivity",
+      "marketing automation",
+      "user-friendly interface",
+      "comprehensive features",
+      "business growth",
+      "sales optimization",
+      "competitive advantage",
+      "market potential",
+      "sales teams",
+      "enterprise solutions",
+      "small business support",
+      "mid-market focus",
+      "diverse industries",
+      "customer demographics",
+      "sales intelligence platform",
+      "marketing & advertising",
+      "sales",
+      "information technology & services",
+      "enterprise software",
+      "enterprises",
+      "computer software",
+      "b2b",
+      "saas"
+    ],
+    "industries": [
+      "information technology & services"
+    ],
+    "secondary_industries": [],
+    "snippets_loaded": true,
+    "industry_tag_id": "5567cd4773696439b10b0000",
+    "industry_tag_hash": {
+      "information technology & services": "5567cd4773696439b10b0000"
+    },
+    "retail_location_count": 0,
+    "raw_address": "535 mission street, san francisco, california, united states, 94105",
+    "street_address": "535 Mission Street",
+    "city": "San Francisco",
+    "state": "California",
+    "postal_code": "94105",
+    "country": "United States",
+    "owned_by_organization_id": null,
+    "short_description": "Apollo.io is an AI sales platform that provides businesses with tools to enhance their go-to-market strategies. Founded in 2015 by Tim and Ray, the company was created to address the limitations of existing sales tools they encountered in their previous startup. Apollo.io offers an all-in-one platform that integrates lead intelligence and sales engagement capabilities, helping businesses find leads, engage prospects, and close deals more effectively.\n\nThe platform features detailed insights into potential customers, tools for managing leads from initial contact to deal closure, and a community-based approach to data accuracy. Apollo.io serves nearly 9,000 paying customers, including startups and large enterprises, and supports over 500,000 sales professionals globally. The company has experienced rapid growth, surpassing $100 million in annual recurring revenue and achieving a valuation of $1.6 billion. Apollo.io has also received funding from notable investors like Y Combinator and Nexus Venture Partners.",
+    "suborganizations": [],
+    "num_suborganizations": 0,
+    "annual_revenue_printed": "100M",
+    "annual_revenue": 100000000,
+    "total_funding": 251200000,
+    "total_funding_printed": "251.2M",
+    "latest_funding_round_date": "2023-08-01T00:00:00.000+00:00",
+    "latest_funding_stage": "Series D",
+    "funding_events": [
+      {
+        "id": "6574c1ff9b797d0001fdab1b",
+        "date": "2023-08-01T00:00:00.000+00:00",
+        "news_url": null,
+        "type": "Series D",
+        "investors": "Bain Capital Ventures, Sequoia Capital, Tribe Capital, Nexus Venture Partners",
+        "amount": "100M",
+        "currency": "$"
+      },
+      {
+        "id": "624f4dfec786590001768016",
+        "date": "2022-03-01T00:00:00.000+00:00",
+        "news_url": null,
+        "type": "Series C",
+        "investors": "Sequoia Capital, Tribe Capital, Nexus Venture Partners, NewView Capital",
+        "amount": "110M",
+        "currency": "$"
+      },
+      {
+        "id": "61b13677623110000186a478",
+        "date": "2021-10-01T00:00:00.000+00:00",
+        "news_url": null,
+        "type": "Series B",
+        "investors": "Tribe Capital, NewView Capital, Nexus Venture Partners",
+        "amount": "32M",
+        "currency": "$"
+      },
+      {
+        "id": "5ffe93caa54d75077c59acef",
+        "date": "2018-06-26T00:00:00.000+00:00",
+        "news_url": "https://techcrunch.com/2018/06/26/yc-grad-zenprospect-rebrands-as-apollo-lands-7-m-series-a/",
+        "type": "Series A",
+        "investors": "Nexus Venture Partners, Social Capital, Y Combinator",
+        "amount": "7M",
+        "currency": "$"
+      },
+      {
+        "id": "6574c1ff9b797d0001fdab20",
+        "date": "2016-10-01T00:00:00.000+00:00",
+        "news_url": null,
+        "type": "Other",
+        "investors": "Y Combinator, SV Angel, Social Capital, Nexus Venture Partners",
+        "amount": "2.2M",
+        "currency": "$"
+      }
+    ],
+    "technology_names": [
+      "AI",
+      "Android",
+      "Basis",
+      "Canva",
+      "Circle",
+      "CloudFlare Hosting",
+      "Cloudflare DNS",
+      "Drift",
+      "Gmail",
+      "Google Apps",
+      "Google Tag Manager",
+      "Google Workspace",
+      "Hubspot",
+      "Microsoft Office 365",
+      "Mobile Friendly",
+      "Python",
+      "Rackspace MailGun",
+      "Remote",
+      "Render",
+      "Reviews",
+      "Salesforce",
+      "SharePoint",
+      "Stripe",
+      "WP Engine",
+      "Webmail",
+      "Zendesk"
+    ],
+    "current_technologies": [
+      {
+        "uid": "ai",
+        "name": "AI",
+        "category": "Other"
+      },
+      {
+        "uid": "android",
+        "name": "Android",
+        "category": "Frameworks and Programming Languages"
+      },
+      {
+        "uid": "basis",
+        "name": "Basis",
+        "category": "Advertising Networks"
+      },
+      {
+        "uid": "canva",
+        "name": "Canva",
+        "category": "Content Management Platform"
+      },
+      {
+        "uid": "circle",
+        "name": "Circle",
+        "category": "Financial Software"
+      },
+      {
+        "uid": "cloudflare_hosting",
+        "name": "CloudFlare Hosting",
+        "category": "Hosting"
+      },
+      {
+        "uid": "cloudflare_dns",
+        "name": "Cloudflare DNS",
+        "category": "Domain Name Services"
+      },
+      {
+        "uid": "drift",
+        "name": "Drift",
+        "category": "Widgets"
+      },
+      {
+        "uid": "gmail",
+        "name": "Gmail",
+        "category": "Email Providers"
+      },
+      {
+        "uid": "google_apps",
+        "name": "Google Apps",
+        "category": "Other"
+      },
+      {
+        "uid": "google_tag_manager",
+        "name": "Google Tag Manager",
+        "category": "Tag Management"
+      },
+      {
+        "uid": "google workspace",
+        "name": "Google Workspace",
+        "category": "Cloud Services"
+      },
+      {
+        "uid": "hubspot",
+        "name": "Hubspot",
+        "category": "Marketing Automation"
+      },
+      {
+        "uid": "office_365",
+        "name": "Microsoft Office 365",
+        "category": "Other"
+      },
+      {
+        "uid": "mobile_friendly",
+        "name": "Mobile Friendly",
+        "category": "Other"
+      },
+      {
+        "uid": "python",
+        "name": "Python",
+        "category": "Frameworks and Programming Languages"
+      },
+      {
+        "uid": "rackspace_mailgun",
+        "name": "Rackspace MailGun",
+        "category": "Email Delivery"
+      },
+      {
+        "uid": "remote",
+        "name": "Remote",
+        "category": "Other"
+      },
+      {
+        "uid": "render",
+        "name": "Render",
+        "category": "Other"
+      },
+      {
+        "uid": "reviews",
+        "name": "Reviews",
+        "category": "Customer Reviews"
+      },
+      {
+        "uid": "salesforce",
+        "name": "Salesforce",
+        "category": "Customer Relationship Management"
+      },
+      {
+        "uid": "sharepoint",
+        "name": "SharePoint",
+        "category": "CMS"
+      },
+      {
+        "uid": "stripe",
+        "name": "Stripe",
+        "category": "Payments"
+      },
+      {
+        "uid": "wp_engine",
+        "name": "WP Engine",
+        "category": "CMS"
+      },
+      {
+        "uid": "webmail",
+        "name": "Webmail",
+        "category": "Email Providers"
+      },
+      {
+        "uid": "zendesk",
+        "name": "Zendesk",
+        "category": "Support and Feedback"
+      }
+    ],
+    "org_chart_root_people_ids": [
+      "66f6de0d74c57a00015d2b39"
+    ],
+    "org_chart_sector": "OrgChart::SectorHierarchy::Rules::IT",
+    "org_chart_removed": false,
+    "org_chart_show_department_filter": true,
+    "departmental_head_count": {
+      "operations": 25,
+      "marketing": 21,
+      "engineering": 251,
+      "finance": 7,
+      "information_technology": 10,
+      "human_resources": 29,
+      "legal": 6,
+      "consulting": 9,
+      "data_science": 10,
+      "business_development": 18,
+      "arts_and_design": 22,
+      "sales": 124,
+      "support": 32,
+      "product_management": 18,
+      "education": 11,
+      "accounting": 4,
+      "administrative": 2,
+      "media_and_commmunication": 1,
+      "entrepreneurship": 0
+    },
+    "generic_org_insights": null
+  }
+}
